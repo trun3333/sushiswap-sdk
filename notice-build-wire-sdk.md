@@ -8,7 +8,9 @@ Run the below cmds to build and generate the ZIP pack file
 
 ```
 yarn
+rm -rf dist
 yarn build
+rm -rf sushiswap-sdk-5.0.0-canary.7.tgz
 npm pack
 ```
 

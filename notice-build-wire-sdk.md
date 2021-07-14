@@ -1,7 +1,10 @@
-# Build and wire `sushiswap-sdk`
+# Update newly-deployed SC addresses and then build and wire `sushiswap-sdk`
 
-.
-Install `sushiswap/sdk` lib from local file
+1.
+Update the newly-deployed SC addresses mainly in the file `sushiswap/sushiswap-sdk/src/constants.ts`
+
+2.
+Build `sushiswap/sdk` lib (used by the `sushiswap-interface`)
 
 The github repo `sushiswap-sdk` must be set at revision `v5.0.0-canary.7`
 Run the below cmds to build and generate the ZIP pack file
@@ -14,6 +17,7 @@ rm -rf sushiswap-sdk-5.0.0-canary.7.tgz
 npm pack
 ```
 
+3.
 Copy the ZIP pack file to the folder `sushiswap-interface`
 
 cd folder `sushiswap-interface`
